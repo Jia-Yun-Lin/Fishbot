@@ -3,7 +3,7 @@ services:
   name: line-bot-python-flask
   env: python
   repo: https://github.com/Jia-Yun-Lin/Fishbot.git
-  buildCommand: pip install gunicorn -r requirements.txt
+  buildCommand: pip install -r requirements.txt
   startCommand: gunicorn app:app
   plan: free
   autoDeploy: false
